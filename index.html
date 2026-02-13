@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mi Tiendita para Mascotas</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.jpg">
+       <section class="header__menu">
+           <nav class="header__nav">
+             <a class="header__link">Home</a>
+             <a class="header__link">Nosotros</a>
+             <a class="header__link">Galeria</a>
+             <a class="header__link">Contacto</a>
+           </nav>
+        </section>
+
+       <section class="header__user">
+        <img src="./img/shopping-cart.svg" class="header__icon header__icon--secondary">
+        <img src="./img/user.svg" class="header__icon">
+       </section>
+    </header>
+
+    <main>
+        <section class="products__new">
+            <h2>Productos nuevos</h2>
+            <button class="products__btn-new">Conoce nuestros nuevos productos</button> 
+        </section>
+
+        <article class="products">
+            <section class="products__items">
+                <img src="./img/abrigo reno.jpg" class="products__img">
+                <p class="products__title">Abrigo navideño</p>
+                <button class="products__btn">Comprar</button>
+            </section>
+
+            <section class="products__items">
+                <img src="./img/accesorios.jpg" class="products__img">
+                <p class="products__title">Hermosos accesorios</p>
+                <button class="products__btn">Comprar</button>
+            </section>
+
+            <section class="products__items">
+                <img src="./img/bozales.jpg" class="products__img">
+                <p class="products__title">Bozales cualquier tamaño</p>
+                <button class="products__btn products__btn--spent">Agotado</button>
+            </section>
+
+            <section class="products__items">
+                <img src="./img/collares con adornos.jpg" class="products__img">
+                <p class="products__title">Collares</p>
+                <button class="products__btn">Comprar</button>
+            </section>
+
+              <section class="products__items">
+                <img src="./img/sueteres.jpg" class="products__img">
+                <p class="products__title">Sueteres varias tallas</p>
+                <button class="products__btn products__btn--spent">Agotado</button>
+            </section>
+
+              <section class="products__items">
+                <img src="./img/vestidito azul.jpg" class="products__img">
+                <p class="products__title">Ropa en varios colores y diseños</p>
+                <button class="products__btn">Comprar</button>
+            </section>
+
+        </article>     
+    </main>
+     
+    <footer class="footer">
+        <div class="footer-content">
+         <div class="footer-links">
+             <a href="#">Sobre nosotros</a>
+             <a href="#">Contacto</a>
+             <a href="#">Términos de servicio</a>
+          </div>
+          <p class="footer-copyright">© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
