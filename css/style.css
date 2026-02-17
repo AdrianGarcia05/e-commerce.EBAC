@@ -97,7 +97,13 @@
     padding: 13px 0;
     text-align: center;
     font-weight: 600;
-
+    /*Cambio 2, cursor pointer*/
+    cursor: pointer;
+}
+/* Cambio 3, se agrega hover que cambia de color el boton*/
+.products__btn:hover {
+    background-color: whitesmoke;
+    color:black;
 }
 
 .products__btn--spent { /*Modificador que pone color gris a los productos agotados*/
