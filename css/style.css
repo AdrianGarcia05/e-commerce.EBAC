@@ -1,0 +1,181 @@
+* {
+    font-family:"Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: rgba(253, 232, 206, 0.792);
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+/* Metodología BEM (Block Element Modifier)*/
+.header__logo { /*Establece el tamaño del logo*/
+    width: 150px;
+}
+
+.header__menu{
+    display:flex;
+    gap:50px
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.header__link {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__icon {
+    cursor: pointer;
+}
+
+.header__icon--secondary { /*Modificador que aplica una opacidad del 50%*/
+    opacity: .5;
+}
+
+.products {
+    display: grid;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    gap: 30px 20px;
+    margin: 30px auto 0;
+}
+.products__new {  
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.products__btn-new {
+    display: block;
+    border: none;
+    background-color: burlywood;
+    color:aliceblue;
+    border-radius: 25px;
+    width: 30%;
+    padding: 13px 0;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.products__img {
+    width: 60%;
+    
+}
+
+.products__title {
+    font-size: .80rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products__btn {
+    display: block;
+    border: none;
+    background-color: rgb(98, 98, 237);
+    color:aliceblue;
+    border-radius: 25px;
+    width: 90%;
+    padding: 13px 0;
+    text-align: center;
+    font-weight: 600;
+    /*Cambio 2, cursor pointer*/
+    cursor: pointer;
+}
+/* Cambio 3, se agrega hover que cambia de color el boton*/
+.products__btn:hover {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.products__btn--spent { /*Modificador que pone color gris a los productos agotados*/
+    background-color: gray;
+}
+.footer {
+    background-color: rgb(87, 87, 245);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15px;
+    }
+
+.footer-links {
+    display: flex;
+    justify-content: center; /*centra los elementos en el eje principal*/
+    align-items:center; /*centra los elementos verticalmente en el eje tranversal*/
+    gap: 190px;/*Añade espacio entre los elementos*/
+    padding: 30px;
+}
+
+.footer-content {
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+.footer-links a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px
+
+}
+ /*da estilo cuando se ha seleccionado la opción con el cursor*/
+.footer-links a:active{
+    color:blue;
+    background-color: beige;
+}
+
+.footer-copyright {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: white;
+    background-color:rgb(87, 87, 245);
+}
+/*Diseño web responsivo Mobily First*/
+@media (max-width: 480px){  
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products__img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .footer-links, .footer-copyright {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 15px;
+    }
+}
+ @media (hover: hover){ /*Es recomedable pasar el hover dentro de media querie*/
+    .footer-links a:hover {
+    text-decoration: underline;
+ }
+ }
+
+ @media (prefers-color-scheme: dark) { /*Utiliza el modo oscuro (dark mode)*/
+    body{
+        background-color: #333;
+        color: #fff
+    }
+ }
